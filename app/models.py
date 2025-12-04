@@ -1,9 +1,12 @@
 from datetime import datetime, timezone
 from typing import Optional
+
 import sqlalchemy as sa
 import sqlalchemy.orm as so
-from app import db, login
 from flask_login import UserMixin
+
+from app import db, login
+
 
 class User(UserMixin, db.Model):
     id: so.Mapped[int] = so.mapped_column(primary_key=True)
