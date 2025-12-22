@@ -3,3 +3,5 @@ __pycache__
 app.db
 **/__pycache__/
 .flaskenv
+logs
+logs/*.log
